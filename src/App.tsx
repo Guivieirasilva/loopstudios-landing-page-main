@@ -8,6 +8,7 @@ import { Container } from './ThemeConfigs/styles'
 import { lightTheme, darkTheme } from './ThemeConfigs/Theme'
 
 import './App.css'
+import { NavMenuMobile } from './components/NavMenuMobile'
 
 function App() {
   const [theme, setTheme] = useState("light")
@@ -19,12 +20,14 @@ function App() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }  >
         <GlobalStyles />
           <div className='app'>
+            <NavMenuMobile />
             <NavMenu />
+            <Container>
+              Hello World!!!
+              <button onClick={() => themeToggler()}>Theme</button>
+            </Container>
           </div>
-        {/* <Container>
-          Hello World!!!
-          <button onClick={() => themeToggler()}>Theme</button>
-        </Container> */}
+
       </ThemeProvider>
   )
 }

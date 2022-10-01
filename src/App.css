@@ -1,11 +1,8 @@
 .app{
    display: grid;
-   /* grid-template-rows: 1fr 1fr 1fr ;   */
-   /* align-items:center;  */
-   background: blue;
+   background: violet;
    justify-items: center;
    grid-auto-flow: row;
    box-sizing: border-box;
-
-   /* height: 100vh; */
+   trasition-duration: .8s;
 }
