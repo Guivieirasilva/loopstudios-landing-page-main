@@ -14,13 +14,15 @@ export const MenuMobile = styled.section<Props>`
    align-items: center;
    color: white;
    background-color: #111111; 
+   z-index: 10;
 
    @media screen and (max-width: 900px) {
       display: flex;
-      opacity: 0;
-      pointer-events: none;
+      opacity: ${({isVisible}) => isVisible === true ? 1 : 0};
+      pointer-events: ${({isVisible}) => isVisible === true ? 'auto' : 'none'};
    }
-  
+
+   
   
    
 
@@ -36,6 +38,10 @@ export const MenuMobile = styled.section<Props>`
             border: none;
             width: 50px;
             height: 50px;
+            transition-duration:.5s;
+            &:hover{
+               transform: scale(1.1,1.1);
+            }
             >img { width: 100%;}
       }
    }
@@ -51,6 +57,12 @@ export const MenuMobile = styled.section<Props>`
          font-family: 'Josefin Sans', sans-serif;
          font-size: 2rem;
          font-weight: 300;
+         >li {
+            transition-duration:.5s;
+            &:hover{
+               transform: scale(1.1,1.1);
+            }
+         }
       }
    }
 

@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { NavMenu } from './components/NavMenu'
 
 import { GlobalStyles } from './ThemeConfigs/GlobalStyles'
-import { Container } from './ThemeConfigs/styles'
+// import { Container } from './ThemeConfigs/styles'
 import { lightTheme, darkTheme } from './ThemeConfigs/Theme'
 
 import './App.css'
@@ -13,7 +13,7 @@ import { NavMenuMobile } from './components/NavMenuMobile'
 
 function App() {
 
-  const [menuIsVisible, setMenuIsVisible] = useState(false)
+  const [menuIsVisible, setMenuIsVisible] = useState(true)
 
   const [theme, setTheme] = useState("light")
   const themeToggler = () => {
@@ -25,7 +25,7 @@ function App() {
         <GlobalStyles />
           <div className='app'>
             <NavMenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>
-            <NavMenu MenuIsVisible={''}/>
+            <NavMenu MenuIsVisible={() => setMenuIsVisible(true)}/>
             
           </div>
 

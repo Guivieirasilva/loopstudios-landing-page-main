@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { PropsNavMenu } from "./";
 
 import BackgoundHeader from "../../images/desktop/image-hero.jpg"
 
-export const ContainerHeader = styled.div`
+export const ContainerHeader = styled.div<PropsNavMenu>`
    background-image:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgoundHeader});
    background-position: center;
    background-size: cover;
@@ -88,7 +89,11 @@ export const ContainerHeader = styled.div`
       >section {
          nav {
             >ul { display: none; }
-            >button { display: block;}
+            >button { 
+               display: block;
+               visibility: ${({MenuIsVisible}) => MenuIsVisible === true ? 'hidden' : 'visible'};
+               z-index: 1;
+            }
          }
       }
 
