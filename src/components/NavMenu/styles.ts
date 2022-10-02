@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import BackgoundHeader from "../../images/desktop/image-hero.jpg"
 
-export const ContainerHeader = styled.header`
+export const ContainerHeader = styled.div`
    background-image:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgoundHeader});
    background-position: center;
    background-size: cover;
@@ -17,9 +17,8 @@ export const ContainerHeader = styled.header`
    color: white;
    box-sizing: border-box;
 
-
    >section{
-      width: 90%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -29,7 +28,6 @@ export const ContainerHeader = styled.header`
       }
 
       >nav{
-
          >button { 
             display: none;
             font-size: 1.5rem;
@@ -68,7 +66,7 @@ export const ContainerHeader = styled.header`
    >div {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      width: 90%;
+      width: 100%;
       margin-left: 0;
 
       >h3{
@@ -86,9 +84,8 @@ export const ContainerHeader = styled.header`
    }
 
    @media screen and (max-width: 900px) {
-      padding: 1rem;
-      >section {
 
+      >section {
          nav {
             >ul { display: none; }
             >button { display: block;}

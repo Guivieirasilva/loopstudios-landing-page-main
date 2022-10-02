@@ -1,6 +1,6 @@
 .app{
    display: grid;
-   background: violet;
+   /* background: violet; */
    justify-items: center;
    grid-auto-flow: row;
    box-sizing: border-box;

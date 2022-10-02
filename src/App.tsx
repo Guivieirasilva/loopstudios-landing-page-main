@@ -10,7 +10,11 @@ import { lightTheme, darkTheme } from './ThemeConfigs/Theme'
 import './App.css'
 import { NavMenuMobile } from './components/NavMenuMobile'
 
+
 function App() {
+
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   const [theme, setTheme] = useState("light")
   const themeToggler = () => {
     theme === 'light' ? setTheme("dark") : setTheme("light")
@@ -20,12 +24,9 @@ function App() {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme }  >
         <GlobalStyles />
           <div className='app'>
-            <NavMenuMobile />
-            <NavMenu />
-            <Container>
-              Hello World!!!
-              <button onClick={() => themeToggler()}>Theme</button>
-            </Container>
+            <NavMenuMobile menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible}/>
+            <NavMenu MenuIsVisible={''}/>
+            
           </div>
 
       </ThemeProvider>

@@ -1,14 +1,28 @@
-import styled from "styled-components";
 
-export const MenuMobile = styled.section`
+import styled, { css } from "styled-components";
+
+interface Props {
+   isVisible: any
+}
+
+export const MenuMobile = styled.section<Props>`
    position: absolute;
-   display: flex;
+   display: none;
    flex-direction: column;
    width: 100%;
    height: 100%;
    align-items: center;
    color: white;
-   background-color: black;
+   background-color: #111111; 
+
+   @media screen and (max-width: 900px) {
+      display: flex;
+      opacity: 0;
+      pointer-events: none;
+   }
+  
+  
+   
 
    >div {
       width: 87%;
@@ -39,5 +53,8 @@ export const MenuMobile = styled.section`
          font-weight: 300;
       }
    }
+
+   
+   
    
 `

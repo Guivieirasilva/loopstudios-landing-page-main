@@ -3,13 +3,18 @@ import { ContainerHeader } from "./styles";
 import IconMenu from '../../images/icon-hamburger.svg'
 import Logo from '../../images/logo.svg'
 
-export function NavMenu() {
+interface Props {
+   MenuIsVisible: any
+}
+
+export function NavMenu(props: Props) {
    return(
+      
       <ContainerHeader>
          <section>
             <a href="#"><img src={Logo} alt="Logo loopsstudios Web services" /></a>
             <nav>
-               <button><img src={IconMenu} alt="" /></button>
+               <button onClick={() => {{props.MenuIsVisible}}}><img src={IconMenu} alt="Icone de abrir o menu" /></button>
                <ul>
                   <li>Sobre</li>
                   <li>Carreiras</li>
