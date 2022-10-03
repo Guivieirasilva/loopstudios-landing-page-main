@@ -19,8 +19,8 @@ export const MenuMobile = styled.section<Props>`
    opacity: ${({isVisible}) => isVisible === true ? 1 : 0};
    pointer-events: ${({isVisible}) => isVisible === true ? 'auto' : 'none'};
    box-sizing: border-box;
-   padding-left: 40px;
-   padding-right: 40px ;
+   padding-left: 10px;
+   padding-right: 10px ;
    
 
 
@@ -59,7 +59,6 @@ export const MenuMobile = styled.section<Props>`
          flex-direction: column;
          gap: 20px;
          font-family: 'Josefin Sans', sans-serif;
-         font-weight: 300;
          >li {
             font-size: 1.4rem;
             transition-duration:.5s;

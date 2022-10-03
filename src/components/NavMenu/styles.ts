@@ -49,10 +49,11 @@ export const ContainerHeader = styled.header<PropsNavMenu>`
             display: flex;
             gap: 30px;
             list-style: none;
-            font-family: 'Josefin Sans', sans-serif;
 
             >li{
-               font-size: 1.2rem;
+               font-family: 'Josefin Sans', sans-serif;
+               font-weight: 300;
+               font-size: 1.4rem;
                align-self: center;
                cursor: pointer;
                transition-duration:.5s;
@@ -88,6 +89,7 @@ export const ContainerHeader = styled.header<PropsNavMenu>`
    }
 
    @media screen and (max-width: 900px) {
+   padding: 3rem 1rem;
 
       >section.navbar {
          nav.navdesk {
