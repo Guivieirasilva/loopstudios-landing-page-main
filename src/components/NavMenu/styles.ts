@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { PropsNavMenu } from "./";
 
-import BackgoundHeader from "../../images/desktop/image-hero.jpg"
+import BackgoundHeader from "../../assets/images/desktop/image-hero.jpg"
 
-export const ContainerHeader = styled.div<PropsNavMenu>`
+export const ContainerHeader = styled.header<PropsNavMenu>`
+   
    background-image:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${BackgoundHeader});
    background-position: center;
    background-size: cover;
@@ -14,21 +15,21 @@ export const ContainerHeader = styled.div<PropsNavMenu>`
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    color: white;
-   box-sizing: border-box;
 
-   >section{
+   >section.navbar {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
 
       >a{
          align-self: center;
       }
 
-      >nav{
+      >nav.navdesk {
          >button { 
             display: none;
             font-size: 1.5rem;
@@ -45,12 +46,14 @@ export const ContainerHeader = styled.div<PropsNavMenu>`
             }
          }   
          >ul{
-            font-size: 1.3rem;
             display: flex;
             gap: 30px;
             list-style: none;
+            font-family: 'Josefin Sans', sans-serif;
 
             >li{
+               font-size: 1.2rem;
+               align-self: center;
                cursor: pointer;
                transition-duration:.5s;
                &:hover{
@@ -64,7 +67,7 @@ export const ContainerHeader = styled.div<PropsNavMenu>`
       
    }
 
-   >div {
+   >div.cont {
       display: grid;
       grid-template-columns: 1fr 1fr;
       width: 100%;
@@ -72,11 +75,11 @@ export const ContainerHeader = styled.div<PropsNavMenu>`
 
       >h3{
 
-         width: 600px;
-         font-size: 72px;
+         width: 550px;
+         font-size: 3rem;
          padding: 2.5rem;
          border: 2px solid white;
-         height: 220px;
+         height: 230px;
          text-align: left;
          font-family: 'Josefin Sans', sans-serif;
          font-weight: 300;
@@ -86,26 +89,33 @@ export const ContainerHeader = styled.div<PropsNavMenu>`
 
    @media screen and (max-width: 900px) {
 
-      >section {
-         nav {
+      >section.navbar {
+         nav.navdesk {
             >ul { display: none; }
             >button { 
                display: block;
-               visibility: ${({MenuIsVisible}) => MenuIsVisible === true ? 'hidden' : 'visible'};
                z-index: 1;
             }
          }
       }
 
-      >div {
-         align-self: flex-start;
+      >div.cont {
+         align-self: center;
          >h3 {
-            margin-top: 150px;
-            width: 280px;
-            font-size: 40px;
+            width: 500px;
+            font-size: 2.9rem;
             padding: 2rem;
-            height: 150px;
          }
+      }
+   }
+   @media screen and (max-width: 630px) {
+      >div.cont>h3{
+         width: 290px;
+         font-size: 1.9rem;
+         padding: 1.7rem;
+         height: 200px;
+
+
       }
    }
 `

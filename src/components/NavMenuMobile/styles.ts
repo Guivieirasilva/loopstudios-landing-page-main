@@ -1,5 +1,5 @@
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 interface Props {
    isVisible: any
@@ -7,37 +7,37 @@ interface Props {
 
 export const MenuMobile = styled.section<Props>`
    position: absolute;
-   display: none;
+   display: flex;
    flex-direction: column;
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    align-items: center;
    color: white;
    background-color: #111111; 
    z-index: 10;
-
-   @media screen and (max-width: 900px) {
-      display: flex;
-      opacity: ${({isVisible}) => isVisible === true ? 1 : 0};
-      pointer-events: ${({isVisible}) => isVisible === true ? 'auto' : 'none'};
-   }
-
-   
-  
+   transition: .8s;
+   opacity: ${({isVisible}) => isVisible === true ? 1 : 0};
+   pointer-events: ${({isVisible}) => isVisible === true ? 'auto' : 'none'};
+   box-sizing: border-box;
+   padding-left: 40px;
+   padding-right: 40px ;
    
 
-   >div {
-      width: 87%;
+
+   >div.mobile {
+      width: 100%;
       align-items: center;
       display: flex;
       justify-content: space-between;
       padding: 44px;
-      margin-top: 30px;
+      box-sizing: border-box;
+      padding: 3rem;
+
       >button {
          background-color: transparent;
             border: none;
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             transition-duration:.5s;
             &:hover{
                transform: scale(1.1,1.1);
@@ -45,19 +45,23 @@ export const MenuMobile = styled.section<Props>`
             >img { width: 100%;}
       }
    }
-   >nav {
+   >nav.navMobile {
       margin-top: 30px;
       display: flex;
       width: 100%;
+      align-items: flex-start;
+      padding-left: 44px;
+
+      
       >ul {
          list-style: none;
          display: flex;
          flex-direction: column;
          gap: 20px;
          font-family: 'Josefin Sans', sans-serif;
-         font-size: 2rem;
          font-weight: 300;
          >li {
+            font-size: 1.4rem;
             transition-duration:.5s;
             &:hover{
                transform: scale(1.1,1.1);

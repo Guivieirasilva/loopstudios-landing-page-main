@@ -1,8 +1,9 @@
 .app{
    display: grid;
-   /* background: violet; */
+   width:100%;
    justify-items: center;
    grid-auto-flow: row;
    box-sizing: border-box;
    trasition-duration: .8s;
+   overflow: hidden;
 }

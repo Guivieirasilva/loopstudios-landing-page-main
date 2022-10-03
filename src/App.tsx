@@ -13,7 +13,7 @@ import { NavMenuMobile } from './components/NavMenuMobile'
 
 function App() {
 
-  const [menuIsVisible, setMenuIsVisible] = useState(true)
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
 
   const [theme, setTheme] = useState("light")
   const themeToggler = () => {
