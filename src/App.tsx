@@ -9,6 +9,7 @@ import { lightTheme, darkTheme } from './ThemeConfigs/Theme'
 
 import './App.css'
 import { NavMenuMobile } from './components/NavMenuMobile'
+import { PictureAndContent } from './components/PictureAndContent'
 
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
                 id="toggle"
               />
               <label htmlFor='toggle' className='button'></label>
+              <PictureAndContent />
+
             </Container>
           </div>
 

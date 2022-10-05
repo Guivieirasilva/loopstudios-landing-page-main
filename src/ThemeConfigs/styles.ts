@@ -16,6 +16,7 @@ export const Container = styled.div`
       border-radius: 38px;
       position: relative;
       cursor: pointer;
+      margin-bottom: 50px ;
    
    &::after{
       width: 30px;
