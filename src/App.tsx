@@ -10,6 +10,7 @@ import { lightTheme, darkTheme } from './ThemeConfigs/Theme'
 import './App.css'
 import { NavMenuMobile } from './components/NavMenuMobile'
 import { PictureAndContent } from './components/PictureAndContent'
+import { Panel } from './components/Panel'
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
               />
               <label htmlFor='toggle' className='button'></label>
               <PictureAndContent />
-
+              <Panel></Panel>
             </Container>
           </div>
 

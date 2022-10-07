@@ -5,6 +5,10 @@ export const Container = styled.div`
    margin: 50px;
    text-align: center;
    transition-duration: .5s;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
    #toggle{
       display:none;
    }
