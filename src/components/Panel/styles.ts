@@ -53,9 +53,9 @@ export const ContentPanel = styled.section`
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 2rem;
+      
       @media screen and (max-width: 1050px) {
          grid-template-rows: 1fr 1fr 1fr 1fr ;
          grid-template-columns: 1fr 1fr;
-      
    }
 `

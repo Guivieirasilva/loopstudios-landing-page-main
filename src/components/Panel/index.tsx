@@ -1,5 +1,5 @@
 import { ContentPanel, Creations } from "./styles";
-import { Banner } from "./Banners";
+import { Banner } from "../Banners";
 
 import ImageDesktopEarth from "../../assets/images/desktop/image-deep-earth.jpg"
 import ImageMobileEarth from "../../assets/images/mobile/image-deep-earth.jpg"

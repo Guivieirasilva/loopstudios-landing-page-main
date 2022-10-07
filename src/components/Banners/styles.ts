@@ -4,6 +4,11 @@ export const BannerContainer = styled.a`
    position: relative;
    display: inline-block;
    text-decoration: none;
+   transition-duration: .6s;
+   transition-timing-function: ease-in;
+   &:hover{
+         transform: scale(1.1,1.1);
+      }
    
    &::after{
       content: "";
