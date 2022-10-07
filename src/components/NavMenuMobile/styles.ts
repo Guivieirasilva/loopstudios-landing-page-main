@@ -39,7 +39,7 @@ export const MenuMobile = styled.section<Props>`
             width: 40px;
             height: 40px;
             transition-duration:.5s;
-            &:hover{
+            &:hover, &:focus{
                transform: scale(1.1,1.1);
             }
             >img { width: 100%;}
@@ -62,7 +62,7 @@ export const MenuMobile = styled.section<Props>`
          >li {
             font-size: 1.4rem;
             transition-duration:.5s;
-            &:hover{
+            &:hover, &:focus{
                transform: scale(1.1,1.1);
             }
          }

@@ -57,7 +57,7 @@ export const ContainerHeader = styled.header<PropsNavMenu>`
                align-self: center;
                cursor: pointer;
                transition-duration:.5s;
-               &:hover{
+               &:hover, &:focus{
                   transform: scale(1.1,1.1);
                }
             }

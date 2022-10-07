@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 :root {
-   font-family: 'Alata', sans-serif;
-   /* font-family: 'Josefin Sans', sans-serif; */  
-   
+   font-family: 'Alata', sans-serif;  
 }
 * {
    margin: 0;

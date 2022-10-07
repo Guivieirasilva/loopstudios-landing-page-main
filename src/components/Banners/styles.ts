@@ -6,7 +6,7 @@ export const BannerContainer = styled.a`
    text-decoration: none;
    transition-duration: .6s;
    transition-timing-function: ease-in;
-   &:hover{
+   &:hover, &:focus{
          transform: scale(1.1,1.1);
       }
    

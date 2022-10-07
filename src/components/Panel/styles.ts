@@ -26,7 +26,7 @@ export const Creations = styled.div`
          color: ${props => props.theme.body};
          text-align: center;
          transition-duration:1s;
-         &:hover{
+         &:hover, &:focus{
             transform: scale(1.1,1.1);
             background-color: ${props => props.theme.body};
             color: ${props => props.theme.fontColor};

@@ -34,7 +34,7 @@ export const FooterContainer = styled.footer`
             margin-left: 20px;
             transition-duration: .5s;
             transition-timing-function:ease-in;
-            &:hover{
+            &:hover, &:focus{
                transform:scale(1.2, 1.2) ;
             }
          }
@@ -50,9 +50,17 @@ export const FooterContainer = styled.footer`
          display: flex;
          gap: 20px;
          >li{
-            font-size: .5rem;
-            >a{text-decoration:none;
+            font-size: .6rem;
+            list-style: none;
+            >a{
+               text-decoration:none;
                color:white;
+               font-family:'Josefin Sans', sans-serif;
+               transition-duration: .8s;
+               &:hover, &:focus {
+                  transform: scale(1.1,1.1);
+                  color: gray;
+               }
             }
          }
 
