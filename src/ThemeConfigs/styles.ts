@@ -8,7 +8,10 @@ export const Container = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 1rem;
+   gap: 3rem;
+   @media screen and (max-width: 880px) {
+      gap: 1rem;
+   }
    #toggle{
       display:none;
    }
