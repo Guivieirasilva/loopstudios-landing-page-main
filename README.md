@@ -35,7 +35,7 @@ Os usuários devem ser capazes de:
 ### Links
 
 - Solução URL: [Github Codigo](https://github.com/Guivieirasilva/loopstudios-landing-page-main)
-- Site Online URL: [Site On](https://your-live-site-url.com)
+- Site Online URL: [Site On](https://loopstudios-landing-page-by-gui.netlify.app/)
 
 
 ### Construído com
